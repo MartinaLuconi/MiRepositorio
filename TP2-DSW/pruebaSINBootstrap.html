@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+.topnav {
+  background-color: black;
+  overflow: hidden;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row; /* en filas (por defecto). Se puede invertir con row-reverse */
+    flex-wrap: nowrap; /* ajusta el ancho de los elementos si no caben (por defecto) */
+    justify-content: flex-start; /* alinea horizontalmente los elementos al inicio (por defecto) */
+    align-items: flex-start; /* alinea verticalmente los elementos al inicio (por defecto) */
+    align-content: stretch; /* ajusta la altura de los elementos para adaptarse al contenedor (por defecto) */
+    border: 1px solid black;
+}
+.boton{
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-weight: 700;
+  color: black;
+  background: #073f07;
+  border:none;
+}
+
+        </style>
+    </head>
+    <body>
+        
+        <div class="topnav" id="myTopnav" >
+        <div>
+            <a href="#" style="color: white;" >Navbar</a>
+            <a href="#" style="color: white;">Home</a>
+            <a href="#"style="color: white;">Producto</a>
+        </div>
+            <div style="float: right;">
+             <a><img src="https://www.zarla.com/images/zarla-h-1x1-2400x2400-20211117-6kj6pdthhyvrwq6x8fjp.png?crop=1:1,smart&width=250&dpr=2" width="35" height="35"></a>
+            </div>
+        </div>
+        <section class="conteiner" style="text-align: center;">
+            <img src="https://content.ipn.com.ar/Repository/275/7/resources/images/rebajas-last-days-heben-desktop.jpg" width="1024" height="250">
+            <br><br>
+            <h1>Productos destacados</h1>
+            <div class="flex-container">
+                <div>  
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_827288-MLA44070086946_112020-W.jpg" width="356" height="368" >
+                </div>
+                <div>
+                    <h3>Plataforma Holly</h3>
+                    <p class="lead">
+                        Suela de Caucho. El eje mide aproximadamente Ankle desde el arco. Único color. Disponible en todos los talles.
+                    </p>
+                    <h5>Precio: $32000</h5>
+                    <button type="button" class="boton">Comprar Ahora</button>
+                </div> 
+            </div>
+    </section>  
+    </body>
+</html>
